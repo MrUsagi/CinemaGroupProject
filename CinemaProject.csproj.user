@@ -7,7 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ProjectWindows\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProjectWindows\MovieWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ProjectWindows\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ProjectWindows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjectWindows\MovieWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjectWindows\SingupFrom.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

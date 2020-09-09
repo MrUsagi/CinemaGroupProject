@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\CinemaProject.csproj": {}
+    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\CinemaGroupProject\\CinemaProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\CinemaProject.csproj": {
+    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\CinemaGroupProject\\CinemaProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\CinemaProject.csproj",
+        "projectUniqueName": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\CinemaGroupProject\\CinemaProject.csproj",
         "projectName": "CinemaProject",
-        "projectPath": "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\CinemaProject.csproj",
-        "packagesPath": "C:\\Users\\Usagi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\obj\\",
+        "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\CinemaGroupProject\\CinemaProject.csproj",
+        "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\CinemaGroupProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -40,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +65,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

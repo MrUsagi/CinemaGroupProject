@@ -24,5 +24,10 @@ namespace CinemaProject
         {
             InitializeComponent();
         }
+
+        private void MovieClick_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

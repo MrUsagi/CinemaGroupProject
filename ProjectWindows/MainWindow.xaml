@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid Background="#FF959595">
+        <Label HorizontalAlignment="Center" Margin="0,0,0,537" FontSize="30" Foreground="#DDF3FF00">Chose you movie</Label>
+        <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="0,47,0,0">
+            <WrapPanel Name="MoviesPanel">
+                <Button Height="220"  Width="160" Click="MovieClick_Click" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="https://upload.wikimedia.org/wikipedia/ru/c/c1/%D0%94%D0%B6%D0%B5%D0%BD%D1%82%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D1%8B.jpg"/>
+                    </Button.Background>
+                </Button>
+            </WrapPanel>
+        </ScrollViewer>
+        <Button Margin="694,-2,0,548" Background="#FF3A79B7">Exit</Button>
     </Grid>
 </Window>

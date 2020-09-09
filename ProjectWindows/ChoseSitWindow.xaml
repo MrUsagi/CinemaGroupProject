@@ -1,0 +1,23 @@
+﻿<Window x:Class="CinemaProject.ProjectWindows.ChoseSitWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaProject.ProjectWindows"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="ChoseSitWindow" Height="450" Width="800" FontSize="30">
+    <Grid Background="#FF959595">
+        <Label Name="HallNameLb" HorizontalAlignment="Center" FontSize="30" Margin="0,0,0,396" FontFamily="Bahnschrift SemiLight SemiCondensed">Hall name</Label>
+        <ScrollViewer Margin="0,43,0,0" x:Name="SitsViewer"></ScrollViewer>
+        <Button Margin="676,0,0,402" Click="SubmitBtn_Click">Submit</Button>
+        
+    </Grid>
+</Window>

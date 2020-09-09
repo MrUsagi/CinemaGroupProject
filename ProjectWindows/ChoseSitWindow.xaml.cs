@@ -13,21 +13,16 @@ using System.Windows.Shapes;
 namespace CinemaProject.ProjectWindows
 {
     /// <summary>
-    /// Interaction logic for MovieWindow.xaml
+    /// Interaction logic for ChoseSitWindow.xaml
     /// </summary>
-    public partial class MovieWindow : Window
+    public partial class ChoseSitWindow : Window
     {
-        public MovieWindow()
+        public ChoseSitWindow()
         {
             InitializeComponent();
         }
 
-        private void Order_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ChoseSit_Click(object sender, RoutedEventArgs e)
+        private void SubmitBtn_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -27,6 +27,6 @@
         <Button Margin="483,392,10,10" Click="Order_Click" Background="#FF0ED10E">Order</Button>
         <Button IsEnabled="False" Margin="299,185,400,217" Click="ChoseSit_Click">Chose sit</Button>
         <TextBox x:Name="RowTb" materialDesign:HintAssist.HelperText="Row" IsEnabled="False" Margin="422,185,339,217"></TextBox>
-        <TextBox x:Name="ColumnTb" materialDesign:HintAssist.HelperText="Column" IsEnabled="False" Margin="466,185,295,217"></TextBox>
+        <TextBox x:Name="ColumnTb" materialDesign:HintAssist.HelperText="Place" IsEnabled="False" Margin="466,185,295,217"></TextBox>
     </Grid>
 </Window>

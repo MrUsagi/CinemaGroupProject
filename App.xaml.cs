@@ -2,6 +2,7 @@
 using CinemaProject.DataLayer.Repository;
 using CinemaProject.DataLayer.UOW;
 using CinemaProject.DataLayer.UOW.Interfaces;
+using CinemaProject.ProjectWindows;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -35,6 +36,12 @@ namespace CinemaProject
             services.AddSingleton<UserRepository>();
             services.AddSingleton(typeof(IUnitOfWork), typeof(UnitOfWork));
             services.AddTransient(typeof(MainWindow));
+            services.AddTransient(typeof(AddHallWindow));
+            services.AddTransient(typeof(AddMovieWindow));
+            services.AddTransient(typeof(ChoseSitWindow));
+            services.AddTransient(typeof(LoginWindow));
+            services.AddTransient(typeof(MovieWindow));
+            services.AddTransient(typeof(SingupFrom));
 
             services.AddDbContext<CinemaContext>(option => option.UseSqlServer(Configuration.GetConnectionString("SqlConnection")));
 

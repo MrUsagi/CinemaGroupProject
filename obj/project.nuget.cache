@@ -1,16 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jrHZRstPelKXO5kPVe9ST5/pWQ7okLdwksYn7cCyOjyDs8VhyJlPleKmyBQz+tTl7g8cHR5yPbl2aRZIPNr/lQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\CinemaGroupProject\\CinemaProject.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Student\\.nuget\\packages\\materialdesigncolors\\1.2.6\\materialdesigncolors.1.2.6.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\materialdesignthemes\\3.1.3\\materialdesignthemes.3.1.3.nupkg.sha512"
-
-  "dgSpecHash": "lqMQyA8mEcVQOZu6Vjht2RZhx7PH+aHobTS2MU9kbGCXoCIWpIj2oHy7EUOGXGmdv49bwKwPr5sfvXdFSERzEA==",
+  "dgSpecHash": "rvD4nZ5zcJs9ZGaPWQfd9inmr9Pd4bkykHyjANt1vE8OYEgxtRX7OpaSu7AdYMX3RtAHkglxbRAx+Ii1iKDheQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\CinemaProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Student\\.nuget\\packages\\materialdesigncolors\\1.2.6\\materialdesigncolors.1.2.6.nupkg.sha512",
+    "C:\\Users\\Student\\.nuget\\packages\\materialdesignthemes\\3.1.3\\materialdesignthemes.3.1.3.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -115,5 +110,12 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Student\\Desktop\\CinemaGroupProject\\obj\\project.nuget.cache : After parsing a value an unexpected character was encountered: \". Path 'expectedPackageFiles[1]', line 10, position 2."
+    }
+  ]
 }

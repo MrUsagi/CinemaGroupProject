@@ -22,7 +22,7 @@ namespace CinemaProject
         public IConfiguration Configuration { get; private set; }
         private void ConfigurationService(IServiceCollection services)
         {
-
+            services.AddSingleton<CinemaContext>();
             services.AddTransient(typeof(MainWindow));
 
             services.AddDbContext<CinemaContext>(option => option.UseSqlServer(Configuration.GetConnectionString("SqlConnection")));

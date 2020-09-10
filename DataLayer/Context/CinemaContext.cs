@@ -20,7 +20,7 @@ namespace CinemaProject.DataLayer.Context
         public DbSet<Film> Films { get; set; }
         public DbSet<FilmStory> FilmStories { get; set; }
         public DbSet<Hall> Halls { get; set; }
-        public DbSet<Place> Places { get; set; }
+        public DbSet<Row> Places { get; set; }
         public DbSet<Row> Rows { get; set; }
         public DbSet<Show> Shows { get; set; }
         #endregion
@@ -36,7 +36,7 @@ namespace CinemaProject.DataLayer.Context
                 .HasKey(x => x.Id);
             modelBuilder.Entity<Hall>()
                 .HasKey(x => x.Id);
-            modelBuilder.Entity<Place>()
+            modelBuilder.Entity<Row>()
                 .HasKey(x => x.Id);
             modelBuilder.Entity<Row>()
                 .HasKey(x => x.Id);

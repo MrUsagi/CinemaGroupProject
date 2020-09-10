@@ -15,7 +15,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         Title="MainWindow" Height="600" Width="800">
     <Grid Background="#FF1E1E1E">
-        <Label HorizontalAlignment="Center" Margin="0,0,0,537" FontSize="30" Foreground="#DDF3FF00" Background="#FF673AB7">Chose you movie</Label>
+        <Label HorizontalAlignment="Center" Margin="0,0,0,537" FontSize="30" Foreground="#DDF7F7F7"  >Chose you movie</Label>
         <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="0,47,0,0">
             <WrapPanel Name="MoviesPanel">
                 <Button Height="220"  Width="160" Click="MovieClick_Click" >
@@ -25,6 +25,8 @@
                 </Button>
             </WrapPanel>
         </ScrollViewer>
-        <Button Margin="694,-2,0,548" Background="#FF673AB7">Exit</Button>
+        <Button Margin="694,1,0,547" Background="#FF673AB7">Exit</Button>
+        <Button x:Name="AddMovieBtn" Margin="111,0,583,548" Background="#FF673AB7" Visibility="Hidden">Add movie</Button>
+        <Button x:Name="AddHallBtn" Margin="0,1,694,547" Background="#FF673AB7" Visibility="Hidden">Add Hall</Button>
     </Grid>
 </Window>

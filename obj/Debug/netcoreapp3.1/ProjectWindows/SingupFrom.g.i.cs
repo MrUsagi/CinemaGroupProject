@@ -88,7 +88,7 @@ namespace ElectroShop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CinemaProject;component/projectwindows/singupfrom.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CinemaProject;V1.0.0.0;component/projectwindows/singupfrom.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ProjectWindows\SingupFrom.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

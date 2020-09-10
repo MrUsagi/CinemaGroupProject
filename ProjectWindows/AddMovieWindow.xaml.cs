@@ -26,5 +26,10 @@ namespace CinemaProject.ProjectWindows
         {
 
         }
+
+        private void AddPhoto_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

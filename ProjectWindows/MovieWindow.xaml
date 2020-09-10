@@ -23,10 +23,10 @@
             <Label Margin="78,0,0,0" Content="/10" Foreground="#DDE9FF06"/>
             <Label x:Name="RatingLb" Margin="66,0,26,0" Content="0" Foreground="#DDE9FF06"/>
         </Grid>
-        <ComboBox Margin="299,90,285,0" VerticalAlignment="Top" IsEditable="True" IsReadOnly="True" Text="Chose session" Foreground="White"></ComboBox>
+        <ComboBox Margin="299,90,285,0" VerticalAlignment="Top" IsEditable="True" IsReadOnly="True" Text="Chose session" Foreground="White" BorderBrush="#89FFFFFF"></ComboBox>
         <Button Margin="483,392,10,10" Click="Order_Click" Background="#FF673AB7">Order</Button>
         <Button IsEnabled="False" Margin="299,185,400,217" Click="ChoseSit_Click">Chose sit</Button>
-        <TextBox x:Name="RowTb" materialDesign:HintAssist.HelperText="Row" IsEnabled="False" Margin="422,185,339,217" Foreground="White"></TextBox>
-        <TextBox x:Name="ColumnTb" materialDesign:HintAssist.HelperText="Place" IsEnabled="False" Margin="466,185,295,217" Foreground="White"></TextBox>
+        <TextBox x:Name="RowTb" materialDesign:HintAssist.HelperText="Row" IsEnabled="False" Margin="422,185,339,217" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
+        <TextBox x:Name="ColumnTb" materialDesign:HintAssist.HelperText="Place" IsEnabled="False" Margin="466,185,295,217" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
     </Grid>
 </Window>

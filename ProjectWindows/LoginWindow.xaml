@@ -21,12 +21,12 @@
              Foreground="White"
   materialDesign:HintAssist.Foreground="Green"
   materialDesign:TextFieldAssist.UnderlineBrush="Green"
-  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="104,389,110,221" />
+  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="104,389,110,221" BorderBrush="#89FFFFFF" />
 
         <TextBox
   x:Name="Login"
   materialDesign:HintAssist.Hint="Login"
-  materialDesign:HintAssist.HelperText="More than 5 symbols" Margin="104,244,110,365" Foreground="White">
+  materialDesign:HintAssist.HelperText="More than 5 symbols" Margin="104,244,110,365" Foreground="White" BorderBrush="#89FFFFFF">
             <TextBox.Text>
                 <Binding
       Path="Name"

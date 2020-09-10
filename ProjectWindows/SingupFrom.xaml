@@ -8,9 +8,9 @@
         mc:Ignorable="d"
         Title="SingupFrom" Height="700" Width="500">
     <Grid Background="#FF1E1E1E" >
-        <TextBox PreviewMouseDown="Phone_MouseDown" x:Name="EmailTb" Text="Email" Margin="104,180,110,441" FontSize="20" Foreground="White"></TextBox>
-        <TextBox PreviewMouseDown="Login_MouseDown" x:Name="LoginTb" Text="Login" Margin="104,281,110,340" FontSize="20" Foreground="White"></TextBox>
-        <TextBox PreviewMouseDown="Password_MouseDown" x:Name="PasswordTb" Text="Password" Margin="104,376,110,245" FontSize="20" Foreground="White"></TextBox>
+        <TextBox PreviewMouseDown="Phone_MouseDown" x:Name="EmailTb" Text="Email" Margin="104,180,110,441" FontSize="20" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
+        <TextBox PreviewMouseDown="Login_MouseDown" x:Name="LoginTb" Text="Login" Margin="104,281,110,340" FontSize="20" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
+        <TextBox PreviewMouseDown="Password_MouseDown" x:Name="PasswordTb" Text="Password" Margin="104,376,110,245" FontSize="20" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
         <Button Panel.ZIndex="100" Click="SingUp_Click" Name="SingUp" Margin="104,494,110,158" Background="#FF673AB7" BorderBrush="{x:Null}" FontSize="15" Height="Auto">SingUp</Button>
         
         

@@ -26,3 +26,8 @@ obj/Debug/netcoreapp3.1/MainWindow.g.i.cs
 obj/Debug/netcoreapp3.1/ProjectWindows/MainWindow.baml
 obj/Debug/netcoreapp3.1/ProjectWindows/MainWindow.g.cs
 obj/Debug/netcoreapp3.1/ProjectWindows/MainWindow.g.i.cs
+.vs/CinemaProject/v16/.suo
+.vs/CinemaProject/v16/Server/sqlite3/db.lock
+.vs/CinemaProject/v16/Server/sqlite3/storage.ide
+.vs/CinemaProject/v16/Server/sqlite3/storage.ide-shm
+.vs/CinemaProject/v16/Server/sqlite3/storage.ide-wal

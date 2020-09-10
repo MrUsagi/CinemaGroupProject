@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\CinemaProject.csproj": {}
+    "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\CinemaProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\CinemaProject.csproj": {
+    "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\CinemaProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\CinemaProject.csproj",
+        "projectUniqueName": "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\CinemaProject.csproj",
         "projectName": "CinemaProject",
-        "projectPath": "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\CinemaProject.csproj",
+        "projectPath": "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\CinemaProject.csproj",
         "packagesPath": "C:\\Users\\Usagi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usagi\\source\\repos\\CinemaProject\\obj\\",
+        "outputPath": "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

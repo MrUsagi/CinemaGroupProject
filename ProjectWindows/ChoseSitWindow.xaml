@@ -14,9 +14,9 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         Title="ChoseSitWindow" Height="450" Width="800" FontSize="30">
-    <Grid Background="#FF959595">
-        <Label Name="HallNameLb" HorizontalAlignment="Center" FontSize="30" Margin="0,0,0,396" FontFamily="Bahnschrift SemiLight SemiCondensed">Hall name</Label>
-        <ScrollViewer Margin="0,43,0,0" x:Name="SitsViewer"></ScrollViewer>
+    <Grid Background="#FF1E1E1E">
+        <Label Name="HallNameLb" HorizontalAlignment="Center" FontSize="30" Margin="0,0,0,396" FontFamily="Bahnschrift SemiLight SemiCondensed" Foreground="#DDFFFFFF">Hall name</Label>
+        <ScrollViewer Margin="0,43,0,0" x:Name="SitsViewer" Foreground="White" Background="#FF1E1E1E"></ScrollViewer>
         <Button Margin="676,0,0,402" Click="SubmitBtn_Click">Submit</Button>
         
     </Grid>

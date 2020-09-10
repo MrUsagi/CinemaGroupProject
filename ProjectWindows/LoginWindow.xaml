@@ -14,10 +14,11 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         Title="LoginWindow" Height="700" Width="500">
-    <Grid Background="#FF959595">
+    <Grid Background="#FF1E1E1E">
         <PasswordBox
   x:Name="Password"
   materialDesign:HintAssist.Hint="Password"
+             Foreground="White"
   materialDesign:HintAssist.Foreground="Green"
   materialDesign:TextFieldAssist.UnderlineBrush="Green"
   Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="104,389,110,221" />
@@ -25,7 +26,7 @@
         <TextBox
   x:Name="Login"
   materialDesign:HintAssist.Hint="Login"
-  materialDesign:HintAssist.HelperText="More than 5 symbols" Margin="104,244,110,365">
+  materialDesign:HintAssist.HelperText="More than 5 symbols" Margin="104,244,110,365" Foreground="White">
             <TextBox.Text>
                 <Binding
       Path="Name"
@@ -35,9 +36,9 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <Button Panel.ZIndex="100" Click="LoginBtn_Click" Name="LoginBtn" Margin="104,514,110,100" Background="#FFAE9F9F" BorderBrush="{x:Null}" FontSize="20" >Login</Button>
-        <Label Content="Don`t have an account?" Margin="126,612,110,10" FontSize="15" Foreground="White" Background="#FF959595" ></Label>
-        <Button Name="SingUpBtn" Click="SingUpBtn_Click"  Margin="290,607,103,24" Height="Auto" Background="#FFAE9F9F" >Sing up</Button>
+        <Button Panel.ZIndex="100" Click="LoginBtn_Click" Name="LoginBtn" Margin="104,514,110,100" Background="#FF673AB7" BorderBrush="{x:Null}" FontSize="20" >Login</Button>
+        <Button Content="Don`t have an account?" Margin="104,590,202,58" FontSize="15" Foreground="White" Background="#FF673AB7" ></Button>
+        <Button Name="SingUpBtn" Click="SingUpBtn_Click"  Margin="307,590,110,58" Height="Auto" Background="#FF673AB7" >Sing up</Button>
 
     </Grid>
 </Window>

@@ -26,7 +26,7 @@
         <TextBox
   x:Name="Login"
   materialDesign:HintAssist.Hint="Login"
-  materialDesign:HintAssist.HelperText="More than 5 symbols" Margin="104,244,110,365" Foreground="White" BorderBrush="#89FFFFFF">
+  materialDesign:HintAssist.HelperText="More than 5 symbols" Margin="104,260,110,365" Foreground="White" BorderBrush="#89FFFFFF">
             <TextBox.Text>
                 <Binding
       Path="Name"
@@ -36,9 +36,8 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <Button Panel.ZIndex="100" Click="LoginBtn_Click" Name="LoginBtn" Margin="104,514,110,100" Background="#FF673AB7" BorderBrush="{x:Null}" FontSize="20" >Login</Button>
-        <Label Content="Don`t have an account?" Margin="104,590,202,40" FontSize="15" Foreground="White" Background="{x:Null}" ></Label>
-        <Button Name="SingUpBtn" Click="SingUpBtn_Click"  Margin="307,590,110,58" Background="#FF673AB7" >Sing up</Button>
-
+        <Button Panel.ZIndex="2" Click="LoginBtn_Click" Name="LoginBtn" Margin="104,514,110,100" Background="#FF673AB7" BorderBrush="{x:Null}" FontSize="20" >Login</Button>
+        <Label Content="Don`t have an account?" Margin="104,590,0,22" FontSize="15" Foreground="White" Background="{x:Null}" HorizontalAlignment="Left" Width="169" ></Label>
+        <Button Panel.ZIndex="3" Name="SingUpBtn" Click="SingUpBtn_Click"  Margin="319,588,98,60"  Background="#FF673AB7" FontSize="12" >Sing up</Button>
     </Grid>
 </Window>

@@ -8,7 +8,7 @@ namespace CinemaProject.DataLayer.Models
     {
         public Show()
         {
-            Users = new List<User>();
+            Users = new List<FilmStory>();
         }
         public int Id { get; set; }
         public int FilmId { get; set; }
@@ -18,6 +18,6 @@ namespace CinemaProject.DataLayer.Models
         public DateTime Date { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-        public IEnumerable<User> Users { get; set; }
+        public IEnumerable<FilmStory> Users { get; set; }
     }
 }

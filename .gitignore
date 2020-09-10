@@ -32,3 +32,4 @@ obj/Debug/netcoreapp3.1/ProjectWindows/MainWindow.g.i.cs
 .vs/CinemaProject/v16/Server/sqlite3/storage.ide-shm
 .vs/CinemaProject/v16/Server/sqlite3/storage.ide-wal
 .vs/CinemaProject/DesignTimeBuild/.dtbcache
+.vs/CinemaProject/config/applicationhost.config

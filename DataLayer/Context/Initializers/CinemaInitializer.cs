@@ -1,5 +1,7 @@
-﻿using System;
+﻿using CinemaProject.DataLayer.Models;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CinemaProject.DataLayer.Context.Initializers
@@ -10,10 +12,14 @@ namespace CinemaProject.DataLayer.Context.Initializers
         {
             context.Database.EnsureCreated();
             if (context.Users.Any()) return;
-            context.Users.Add(new User() { });
+            context.Users.Add(new User() { 
+                Login = "root",
+                Password = "root",
+                isAdmin = true
+            });
 
             context.SaveChanges();
         }
     }
 }
-}
+

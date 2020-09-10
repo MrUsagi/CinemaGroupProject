@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CinemaProject.DataLayer.Models
@@ -10,6 +11,7 @@ namespace CinemaProject.DataLayer.Models
         {
             Places = new List<Place>();
         }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int Number { get; set; }
         public int HallId { get; set; }

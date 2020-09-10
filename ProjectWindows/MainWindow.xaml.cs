@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaProject.ProjectWindows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +26,23 @@ namespace CinemaProject
             InitializeComponent();
         }
 
-        private void MovieClick_Click(object sender, RoutedEventArgs e)
+        private void Movie_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void AddMovieClick(object sender, RoutedEventArgs e)
+        {
+            MovieWindow window = new MovieWindow();
+            this.Close();
+            window.Show();
+        }
+
+        private void AddHallClick(object sender, RoutedEventArgs e)
+        {
+            AddHallWindow window = new AddHallWindow();
+            this.Close();
+            window.Show();
         }
     }
 }

@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ProjectWindows\AddHallWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProjectWindows\AddMovieWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ProjectWindows\ChoseSitWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -18,6 +24,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ProjectWindows\AddHallWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjectWindows\AddMovieWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ProjectWindows\ChoseSitWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

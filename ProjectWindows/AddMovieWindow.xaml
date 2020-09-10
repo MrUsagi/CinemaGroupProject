@@ -18,6 +18,6 @@
         <Button Height="300" Margin="119,30,119,0" VerticalAlignment="Top" Background="{x:Null}">Photo</Button>
         <TextBox materialDesign:HintAssist.Hint="Movie Name" Foreground="White" Margin="0,335,206,56" FontSize="10"></TextBox>
         <TextBox materialDesign:HintAssist.Hint="Rating /10" Foreground="White" Margin="474,335,10,56" FontSize="10"></TextBox>
-        <Button Margin="10,0,10,9" Background="#FF46BD0F" Height="32" VerticalAlignment="Bottom">Save</Button>
+        <Button Margin="10,0,10,9" Background="#FF46BD0F" Height="32" VerticalAlignment="Bottom" Click="SaveBtnClick_Click">Save</Button>
     </Grid>
 </Window>

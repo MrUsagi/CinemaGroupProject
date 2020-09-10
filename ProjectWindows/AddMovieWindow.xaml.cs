@@ -21,5 +21,10 @@ namespace CinemaProject.ProjectWindows
         {
             InitializeComponent();
         }
+
+        private void SaveBtnClick_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

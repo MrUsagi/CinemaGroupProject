@@ -1,0 +1,32 @@
+﻿<Window x:Class="CinemaProject.ProjectWindows.MovieWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaProject.ProjectWindows"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MovieWindow" Height="450" Width="800">
+    <Grid Background="#FF1E1E1E" >
+        <Label Name="MovieName" HorizontalAlignment="Center"  FontSize="16" Margin="0,0,0,393" Foreground="#DDFFFFFF">Name</Label>
+        <Image x:Name="MoviePic" Margin="25,42,507,128" Source="https://upload.wikimedia.org/wikipedia/ru/c/c1/%D0%94%D0%B6%D0%B5%D0%BD%D1%82%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D1%8B.jpg" >
+        </Image>
+        <Grid x:Name="RatingGrid" Margin="286,46,391,361">
+            <Label Margin="10,0,41,0" Content="Rating" Foreground="#DDFFFFFF"/>
+            <Label Margin="78,0,0,0" Content="/10" Foreground="#DDE9FF06"/>
+            <Label x:Name="RatingLb" Margin="66,0,26,0" Content="0" Foreground="#DDE9FF06"/>
+        </Grid>
+        <ComboBox Margin="299,90,285,0" VerticalAlignment="Top" IsEditable="True" IsReadOnly="True" Text="Chose session" Foreground="White" BorderBrush="#89FFFFFF"></ComboBox>
+        <Button Margin="483,392,10,10" Click="Order_Click" Background="#FF673AB7">Order</Button>
+        <Button IsEnabled="False" Margin="299,185,400,217" Click="ChoseSit_Click">Chose sit</Button>
+        <TextBox x:Name="RowTb" materialDesign:HintAssist.HelperText="Row" IsEnabled="False" Margin="422,185,339,217" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
+        <TextBox x:Name="ColumnTb" materialDesign:HintAssist.HelperText="Place" IsEnabled="False" Margin="466,185,295,217" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
+    </Grid>
+</Window>

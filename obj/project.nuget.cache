@@ -1,5 +1,12 @@
 {
   "version": 2,
+  "dgSpecHash": "jrHZRstPelKXO5kPVe9ST5/pWQ7okLdwksYn7cCyOjyDs8VhyJlPleKmyBQz+tTl7g8cHR5yPbl2aRZIPNr/lQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\CinemaGroupProject\\CinemaProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Student\\.nuget\\packages\\materialdesigncolors\\1.2.6\\materialdesigncolors.1.2.6.nupkg.sha512",
+    "C:\\Users\\Student\\.nuget\\packages\\materialdesignthemes\\3.1.3\\materialdesignthemes.3.1.3.nupkg.sha512"
+
   "dgSpecHash": "lqMQyA8mEcVQOZu6Vjht2RZhx7PH+aHobTS2MU9kbGCXoCIWpIj2oHy7EUOGXGmdv49bwKwPr5sfvXdFSERzEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\CinemaProject.csproj",

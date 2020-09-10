@@ -69,7 +69,7 @@ namespace CinemaProject.ProjectWindows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CinemaProject;V1.0.0.0;component/projectwindows/addhallwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CinemaProject;component/projectwindows/addhallwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ProjectWindows\AddHallWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

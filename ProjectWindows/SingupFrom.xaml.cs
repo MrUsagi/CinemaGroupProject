@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace ElectroShop
+namespace CinemaProject.ProjectWindows
 {
     /// <summary>
     /// Interaction logic for SingupFrom.xaml

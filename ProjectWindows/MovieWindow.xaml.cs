@@ -24,12 +24,14 @@ namespace CinemaProject.ProjectWindows
 
         private void Order_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void ChoseSit_Click(object sender, RoutedEventArgs e)
         {
-
+            ChoseSitWindow window = new ChoseSitWindow();
+            this.Close();
+            window.Show();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ElectroShop;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -24,12 +25,16 @@ namespace CinemaProject.ProjectWindows
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow window = new MainWindow();
+            this.Close();
+            window.Show();
         }
 
         private void SingUpBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            SingupFrom window = new SingupFrom();
+            this.Close();
+            window.Show();
         }
     }
 }

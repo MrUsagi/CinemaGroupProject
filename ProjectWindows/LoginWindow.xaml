@@ -37,8 +37,8 @@
             </TextBox.Text>
         </TextBox>
         <Button Panel.ZIndex="100" Click="LoginBtn_Click" Name="LoginBtn" Margin="104,514,110,100" Background="#FF673AB7" BorderBrush="{x:Null}" FontSize="20" >Login</Button>
-        <Button Content="Don`t have an account?" Margin="104,590,202,58" FontSize="15" Foreground="White" Background="#FF673AB7" ></Button>
-        <Button Name="SingUpBtn" Click="SingUpBtn_Click"  Margin="307,590,110,58" Height="Auto" Background="#FF673AB7" >Sing up</Button>
+        <Label Content="Don`t have an account?" Margin="104,590,202,40" FontSize="15" Foreground="White" Background="{x:Null}" ></Label>
+        <Button Name="SingUpBtn" Click="SingUpBtn_Click"  Margin="307,590,110,58" Background="#FF673AB7" >Sing up</Button>
 
     </Grid>
 </Window>

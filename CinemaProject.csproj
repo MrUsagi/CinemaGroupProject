@@ -18,4 +18,8 @@
     <Resource Include="ProjectWindows\741057.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="BuisnessLogic\" />
+  </ItemGroup>
+
 </Project>

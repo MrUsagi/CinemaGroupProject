@@ -1,4 +1,6 @@
-﻿using CinemaProject.ProjectWindows;
+﻿using CinemaProject.BuisnessLogic;
+using CinemaProject.ProjectWindows;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,14 +23,11 @@ namespace CinemaProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private readonly MainService _service;
+        public MainWindow(MainService service)
         {
             InitializeComponent();
-        }
-
-        private void Movie_Click(object sender, RoutedEventArgs e)
-        {
-
+            _service = service;
         }
 
         private void AddMovieClick(object sender, RoutedEventArgs e)
@@ -43,6 +42,18 @@ namespace CinemaProject
             AddHallWindow window = new AddHallWindow();
             this.Close();
             window.Show();
+        }
+
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            await _service.LoadFilms(MoviesPanel);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var window = App.ServiceProvider.GetRequiredService<LoginWindow>();
+            window.Show();
+            this.Close();
         }
     }
 }

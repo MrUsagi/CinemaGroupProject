@@ -13,10 +13,10 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="MovieWindow" Height="450" Width="800">
+        Title="MovieWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid Background="#FF1E1E1E" >
         <Label Name="MovieName" HorizontalAlignment="Center"  FontSize="16" Margin="0,0,0,393" Foreground="#DDFFFFFF">Name</Label>
-        <Image x:Name="MoviePic" Margin="25,42,507,128" Source="https://upload.wikimedia.org/wikipedia/ru/c/c1/%D0%94%D0%B6%D0%B5%D0%BD%D1%82%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D1%8B.jpg" >
+        <Image x:Name="MoviePic" Margin="25,42,507,128">
         </Image>
         <Grid x:Name="RatingGrid" Margin="286,46,391,361">
             <Label Margin="10,0,41,0" Content="Rating" Foreground="#DDFFFFFF"/>

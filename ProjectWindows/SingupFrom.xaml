@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CinemaProject.ProjectWindows"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="SingupFrom" Height="700" Width="500">
+        Title="SingupFrom" Height="700" Width="500" Closing="Window_Closing">
     <Grid Background="#FF1E1E1E" >
         <TextBox materialDesign:HintAssist.Hint="Email" x:Name="EmailTb" Margin="104,180,110,441" FontSize="20" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
         <TextBox materialDesign:HintAssist.Hint="Login" x:Name="LoginTb" Margin="104,281,110,340" FontSize="20" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>

@@ -23,6 +23,7 @@ namespace CinemaProject.DataLayer.Context
         public DbSet<Row> Places { get; set; }
         public DbSet<Row> Rows { get; set; }
         public DbSet<Show> Shows { get; set; }
+        public DbSet<ShowSeats> ShowSeats { get; set; }
         #endregion
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -42,6 +43,8 @@ namespace CinemaProject.DataLayer.Context
                 .HasKey(x => x.Id);
             modelBuilder.Entity<Show>()
                 .HasKey(x => x.Id);
+            modelBuilder.Entity<ShowSeats>()
+                .HasKey(x => x.Id);
             #endregion
             #region Relations
             modelBuilder.Entity<User>()
@@ -50,22 +53,26 @@ namespace CinemaProject.DataLayer.Context
             modelBuilder.Entity<FilmStory>()
                 .HasOne(x => x.User)
                 .WithMany(x => x.FilmHistory)
-                .HasForeignKey(x=>x.UserId);
+                .HasForeignKey(x=>x.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
             modelBuilder.Entity<FilmStory>()
                 .HasOne(x => x.Show)
                 .WithMany(x => x.Users)
-                .HasForeignKey(x=>x.UserId);
+                .HasForeignKey(x=>x.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
             modelBuilder.Entity<Film>()
                 .HasMany(x => x.Shows)
                 .WithOne(x => x.Film);
             modelBuilder.Entity<Show>()
                 .HasOne(x => x.Film)
                 .WithMany(x => x.Shows)
-                .HasForeignKey(x=>x.FilmId);
+                .HasForeignKey(x=>x.FilmId)
+                .OnDelete(DeleteBehavior.NoAction);
             modelBuilder.Entity<Show>()
                 .HasOne(x => x.Hall)
                 .WithMany(x => x.Shows)
-                .HasForeignKey(x=>x.HallId);
+                .HasForeignKey(x=>x.HallId)
+                .OnDelete(DeleteBehavior.NoAction);
             modelBuilder.Entity<Hall>()
                 .HasMany(x => x.Shows)
                 .WithOne(x => x.Hall);
@@ -78,14 +85,26 @@ namespace CinemaProject.DataLayer.Context
             modelBuilder.Entity<Row>()
                 .HasOne(x => x.Hall)
                 .WithMany(x => x.Rows)
-                .HasForeignKey(x=>x.HallId);
+                .HasForeignKey(x=>x.HallId)
+                .OnDelete(DeleteBehavior.NoAction);
             modelBuilder.Entity<Place>()
                 .HasOne(x => x.Row)
                 .WithMany(x => x.Places)
-                .HasForeignKey(x=>x.RowId);
+                .HasForeignKey(x=>x.RowId)
+                .OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<Place>()
+                .HasMany(x => x.Shows)
+                .WithOne(x => x.Seat)
+                .HasForeignKey(x=>x.SeatId)
+                .OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<Show>()
+                .HasMany(x => x.Seats)
+                .WithOne(x => x.Show)
+                .HasForeignKey(x => x.ShowId)
+                .OnDelete(DeleteBehavior.NoAction);
             #endregion
             #region Another configuration
-            modelBuilder.Entity<Place>()
+            modelBuilder.Entity<ShowSeats>()
                 .Property(x => x.Status)
                 .HasConversion(new EnumToStringConverter<Status>());
             #endregion

@@ -10,6 +10,7 @@ namespace CinemaProject.DataLayer.Models
         public Show()
         {
             Users = new List<FilmStory>();
+            Seats = new List<ShowSeats>();
         }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
@@ -21,5 +22,6 @@ namespace CinemaProject.DataLayer.Models
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public IEnumerable<FilmStory> Users { get; set; }
+        public IEnumerable<ShowSeats> Seats { get; set; }
     }
 }

@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\CinemaProject.csproj": {}
+    "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\CinemaProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\CinemaProject.csproj": {
+    "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\CinemaProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\CinemaProject.csproj",
+        "projectUniqueName": "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\CinemaProject.csproj",
         "projectName": "CinemaProject",
-        "projectPath": "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\CinemaProject.csproj",
-        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Desktop\\CinemaGroupProject\\obj\\",
+        "projectPath": "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\CinemaProject.csproj",
+        "packagesPath": "C:\\Users\\Usagi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usagi\\Desktop\\CinemaGroupProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Usagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -78,7 +76,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

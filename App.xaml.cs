@@ -1,4 +1,5 @@
-﻿using CinemaProject.DataLayer.Context;
+﻿using CinemaProject.BuisnessLogic;
+using CinemaProject.DataLayer.Context;
 using CinemaProject.DataLayer.Repository;
 using CinemaProject.DataLayer.UOW;
 using CinemaProject.DataLayer.UOW.Interfaces;
@@ -34,6 +35,9 @@ namespace CinemaProject
             services.AddSingleton<RowRepository>();
             services.AddSingleton<ShowRepository>();
             services.AddSingleton<UserRepository>();
+            services.AddSingleton<LoginService>();
+            services.AddSingleton<RegisterService>();
+            services.AddSingleton<MainService>();
             services.AddSingleton(typeof(IUnitOfWork), typeof(UnitOfWork));
             services.AddTransient(typeof(MainWindow));
             services.AddTransient(typeof(AddHallWindow));
@@ -58,7 +62,7 @@ namespace CinemaProject
             ConfigurationService(serviceCollection);
             ServiceProvider = serviceCollection.BuildServiceProvider();
 
-            var mainWindow = ServiceProvider.GetRequiredService<MainWindow>();
+            var mainWindow = ServiceProvider.GetRequiredService<LoginWindow>();
             mainWindow.Show();
 
         }

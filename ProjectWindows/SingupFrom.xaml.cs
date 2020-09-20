@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CinemaProject.BuisnessLogic;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,28 +21,28 @@ namespace CinemaProject.ProjectWindows
     /// </summary>
     public partial class SingupFrom : Window
     {
-        public SingupFrom()
+        private readonly RegisterService _service;
+        public SingupFrom(RegisterService service)
         {
             InitializeComponent();
+            _service = service;
         }
 
-        private void SingUp_Click(object sender, RoutedEventArgs e)
+        private async void SingUp_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (await _service.RegisterUser(LoginTb.Text, PasswordTb.Text, EmailTb.Text))
+            {
+                MessageBox.Show("Registration complete!");
+                this.Close();
+            }
+            else
+                MessageBox.Show("You have some troubles. Try Again");
         }
 
-        private void Phone_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            
-        }
-        private void Login_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            
-        }
-
-        private void Password_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            
+            var window = App.ServiceProvider.GetRequiredService<LoginWindow>();
+            window.Show();
         }
     }
 }

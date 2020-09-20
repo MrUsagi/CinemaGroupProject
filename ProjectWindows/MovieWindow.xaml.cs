@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaProject.BuisnessLogic;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -32,6 +33,13 @@ namespace CinemaProject.ProjectWindows
             ChoseSitWindow window = new ChoseSitWindow();
             this.Close();
             window.Show();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            MovieName.Content = UserControler.Film.Name;
+            MoviePic.Source = (ImageSource)new ImageSourceConverter().ConvertFrom(UserControler.Film.ImageURL);
+            RatingLb.Content = UserControler.Film.Rating;
         }
     }
 }

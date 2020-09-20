@@ -1,4 +1,6 @@
 ﻿
+using CinemaProject.BuisnessLogic;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,21 +20,30 @@ namespace CinemaProject.ProjectWindows
     /// </summary>
     public partial class LoginWindow : Window
     {
-        public LoginWindow()
+        private readonly LoginService _service;
+        public LoginWindow(LoginService service)
         {
             InitializeComponent();
+            _service = service;
         }
 
-        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        private async void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow window = new MainWindow();
-            this.Close();
-            window.Show();
+            if(await _service.Login(Login.Text, Password.Password))
+            {
+                MainWindow window = App.ServiceProvider.GetRequiredService<MainWindow>();
+                this.Close();
+                window.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid login or password!");
+            }
         }
 
         private void SingUpBtn_Click(object sender, RoutedEventArgs e)
         {
-            SingupFrom window = new SingupFrom();
+            SingupFrom window = App.ServiceProvider.GetRequiredService<SingupFrom>();
             this.Close();
             window.Show();
         }

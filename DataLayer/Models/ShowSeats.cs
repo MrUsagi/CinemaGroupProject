@@ -6,17 +6,14 @@ using System.Text;
 
 namespace CinemaProject.DataLayer.Models
 {
-    public class Place
+    public class ShowSeats
     {
-        public Place()
-        {
-            Shows = new List<ShowSeats>();
-        }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public int RowId { get; set; }
-        public Row Row { get; set; }
-        public int Number { get; set; }
-        public IEnumerable<ShowSeats> Shows { get; set; }
+        public int SeatId { get; set; }
+        public Place Seat { get; set; }
+        public int ShowId { get; set; }
+        public Show Show { get; set; }
+        public Status Status { get; set; }
     }
 }

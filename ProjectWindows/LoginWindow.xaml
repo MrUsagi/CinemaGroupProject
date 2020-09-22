@@ -36,8 +36,8 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <Button Panel.ZIndex="2" Click="LoginBtn_Click" Name="LoginBtn" Margin="104,514,110,100" Background="#FF673AB7" BorderBrush="{x:Null}" FontSize="20" >Login</Button>
+        <Button Panel.ZIndex="2" Click="LoginBtn_Click" Name="LoginBtn" Margin="104,0,110,122" Background="#FF673AB7" BorderBrush="{x:Null}" FontSize="20" Height="32" VerticalAlignment="Bottom" >Login</Button>
         <Label Content="Don`t have an account?" Margin="104,578,0,34" FontSize="15" Foreground="White" Background="{x:Null}" HorizontalAlignment="Left" Width="169" ></Label>
-        <Button Panel.ZIndex="3" Name="SingUpBtn" Click="SingUpBtn_Click"  Margin="278,0,57,52"  Background="#FF673AB7" FontSize="20" Height="32" VerticalAlignment="Bottom" >Sing up</Button>
+        <Button Panel.ZIndex="3" Name="SingUpBtn" Click="SingUpBtn_Click"  Margin="278,0,57,52"  Background="#FF673AB7" FontSize="20" Height="40" VerticalAlignment="Bottom" >Sing up</Button>
     </Grid>
 </Window>

@@ -88,7 +88,7 @@ namespace CinemaProject.ProjectWindows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CinemaProject;V1.0.0.0;component/projectwindows/loginwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CinemaProject;component/projectwindows/loginwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ProjectWindows\LoginWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

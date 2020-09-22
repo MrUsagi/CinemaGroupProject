@@ -56,7 +56,7 @@ namespace CinemaProject.ProjectWindows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CinemaProject;V1.0.0.0;component/projectwindows/addmoviewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CinemaProject;component/projectwindows/addmoviewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ProjectWindows\AddMovieWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

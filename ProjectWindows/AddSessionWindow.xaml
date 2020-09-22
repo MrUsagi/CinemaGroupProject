@@ -1,0 +1,15 @@
+﻿<Window x:Class="CinemaProject.ProjectWindows.AddSessionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaProject.ProjectWindows"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="AddSessionWindow" Height="450" Width="400">
+    <Grid Background="#FF1E1E1E">
+        <Label HorizontalAlignment="Center" Foreground="White" FontSize="20" Margin="0,0,0,399" >Add Session</Label>
+        <ComboBox Foreground="White" IsEditable="True" Text="Chose hall" Margin="143,54,142,0" FontSize="15" VerticalAlignment="Top" Name="ChoseHallCmbx"></ComboBox>
+        <TextBox materialDesign:HintAssist.Hint="Time" x:Name="PasswordTb" Margin="107,121,107,0" FontSize="15" Foreground="White" BorderBrush="#89FFFFFF" Height="31" VerticalAlignment="Top"></TextBox>
+    </Grid>
+</Window>

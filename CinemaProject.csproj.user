@@ -13,6 +13,9 @@
     <Compile Update="ProjectWindows\AddMovieWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ProjectWindows\AddSessionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ProjectWindows\ChoseSitWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ProjectWindows\AddMovieWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjectWindows\AddSessionWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ProjectWindows\ChoseSitWindow.xaml">

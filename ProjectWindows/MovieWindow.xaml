@@ -28,6 +28,6 @@
         <Button IsEnabled="False" Margin="299,0,400,217" Click="ChoseSit_Click" Height="32" VerticalAlignment="Bottom">Chose sit</Button>
         <TextBox x:Name="RowTb" materialDesign:HintAssist.HelperText="Row" IsEnabled="False" Margin="422,185,339,217" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
         <TextBox x:Name="ColumnTb" materialDesign:HintAssist.HelperText="Place" IsEnabled="False" Margin="466,185,295,217" Foreground="White" BorderBrush="#89FFFFFF"></TextBox>
-        <Button Margin="0,84,10,318" HorizontalAlignment="Right" Width="222"> AddSesson</Button>
+        <Button Name="AddSesionBtn" Margin="0,84,10,318" HorizontalAlignment="Right" Width="222"> AddSesson</Button>
     </Grid>
 </Window>

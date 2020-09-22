@@ -11,5 +11,6 @@
         <Label HorizontalAlignment="Center" Foreground="White" FontSize="20" Margin="0,0,0,399" >Add Session</Label>
         <ComboBox Foreground="White" IsEditable="True" Text="Chose hall" Margin="143,54,142,0" FontSize="15" VerticalAlignment="Top" Name="ChoseHallCmbx"></ComboBox>
         <TextBox materialDesign:HintAssist.Hint="Time" x:Name="PasswordTb" Margin="107,121,107,0" FontSize="15" Foreground="White" BorderBrush="#89FFFFFF" Height="31" VerticalAlignment="Top"></TextBox>
+        <Button Background="#FF50D650" Margin="107,201,107,201">Add</Button>
     </Grid>
 </Window>
